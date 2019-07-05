@@ -1,0 +1,12 @@
+.logo {
+    color: white;
+    transform: scale(1.5);
+    margin-top: -0.16rem;
+}
+
+.logo-text {
+    color: white;
+    display: inline-block;
+    margin-left: 0.15rem;
+    font-size: 0.28rem;
+}

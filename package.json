@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "choerodon-ui": "^0.7.5",
+    "mobx": "^5.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
