@@ -1,0 +1,16 @@
+#sub-header-box {
+    background-color: white;
+    border-bottom: .0125rem solid rgba(0, 0, 0, .2 );
+    height: 0.55rem;
+    margin-top: 0.55rem;
+}
+.sub-header-icon {
+    color: rgb(89, 89, 89);
+    transform: scale(1.1);
+    margin-top: -0.1rem;
+}
+.sub-header-text {
+    margin-left: 0.15rem;
+    font-size: 0.16rem;
+    margin-top: -0.12rem;
+}

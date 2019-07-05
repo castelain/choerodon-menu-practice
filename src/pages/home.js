@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 import { Layout } from 'choerodon-ui';
 import MyHeader from '../containers/my-header';
-import '../styles/header.less';
+import SubHeader from '../components/sub-header';
 
-const { Header, Content } = Layout;
+
+const { Content } = Layout;
 
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {
+            part: {
+                type: 'account_balance',
+                title: '首页'
+            }
+        }
     }
     render() { 
         return ( 
             <Layout>
-                <Header id="header-bg">
-                    <MyHeader></MyHeader>
-                </Header>
-                <Content>Here is homepage's content!</Content>
+                <MyHeader></MyHeader>
+                <Content>
+                    <SubHeader part={ this.state.part }></SubHeader>
+                    Here is homepage's content!</Content>
             </Layout>
         );
     }

@@ -1,7 +1,7 @@
 .logo {
     color: white;
     transform: scale(1.5);
-    margin-top: -0.16rem;
+    margin-top: -0.18rem;
 }
 
 .logo-text {
@@ -9,4 +9,5 @@
     display: inline-block;
     margin-left: 0.15rem;
     font-size: 0.28rem;
+    margin-top: -0.14rem;
 }

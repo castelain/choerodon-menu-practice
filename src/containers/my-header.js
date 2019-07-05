@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Menu } from 'choerodon-ui';
+import { Layout } from 'choerodon-ui';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoStatic from '../components/logo-static';
 import LogoDynamic from '../components/logo-dynamic';
+import '../styles/header.css';
 
+const { Header } = Layout;
 
 class MyHeader extends Component {
     constructor(props) {
@@ -12,12 +14,14 @@ class MyHeader extends Component {
     }
     render() { 
         return (
-            <Router>
-                <Switch>
-                    <Route path='/' component={ LogoStatic } exact></Route>
-                    <Route component={ LogoDynamic }></Route>
-                </Switch>
-            </Router>     
+            <Header id="header-box">
+                <Router>
+                    <Switch>
+                        <Route path='/' component={ LogoStatic } exact></Route>
+                        <Route component={ LogoDynamic }></Route>
+                    </Switch>
+                </Router>   
+            </Header>  
         );
     }
 }
