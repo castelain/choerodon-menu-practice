@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MyTable from "../components/my-table";
 import { Row, Col } from "antd";
 import MyDropdown from "../components/my-dropdown";
+import MySearchInput from "../components/my-search-input";
 
 
 class ModelHomeContainer extends Component {
@@ -17,7 +18,7 @@ class ModelHomeContainer extends Component {
                         <MyDropdown dropdownData={ this.props.dataSource.dropdownData }></MyDropdown>
                     </Col>
                     <Col span={ 12 }>
-
+                        <MySearchInput ></MySearchInput>
                     </Col>
                 </Row>
                 <MyTable dataSource={ this.props.dataSource }></MyTable>
