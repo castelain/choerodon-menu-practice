@@ -16,7 +16,7 @@ code {
 /* 文字样式设置 */
 .text-title {
   color: rgba(0, 0, 0, .6);
-  font-size: 1rem;
+  font-size: .2rem;
 }
 
 .text-info {

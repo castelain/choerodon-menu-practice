@@ -7,6 +7,7 @@ import MyModalButton from '../components/my-modal-button';
 import AvatarContainer from "../containers/avatar-container";
 import ShortcutContainer from '../containers/shortcut-container';
 import CourseContainer from "../containers/course-container";
+import MessageContainer from "../containers/message-container";
 import '../styles/header.css';
 
 const { Header } = Layout;
@@ -35,15 +36,15 @@ class MyHeader extends Component {
                         &nbsp; 
                     </Col>
                     <Col span={ 4 }>
-                        <Row gutter={ 8 }>
-                            <Col span={ 6 }>
+                        <Row type="flex" justify="space-between">
+                            <Col span={ 8 }>
                                 <ShortcutContainer></ShortcutContainer>
                             </Col>
                             <Col span={ 6 }>
                                 <CourseContainer></CourseContainer>
                             </Col>
-                            <Col span={ 6 }>
-                            
+                            <Col span={ 4 }>
+                                <MessageContainer></MessageContainer>
                             </Col>
                             <Col span={ 6 }>
                                 <AvatarContainer></AvatarContainer>

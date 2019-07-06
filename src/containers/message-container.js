@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { HashRouter as Router } from 'react-router-dom';
-import { Drawer, Icon, Divider } from 'antd';
-import LinkItem from "../components/link-item";
+import { HashRouter as Router, Link } from 'react-router-dom';
+import { Drawer, Icon, Button, Empty } from 'antd';
 
-class CourseContainer extends Component {
+class MessageContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,9 +22,9 @@ class CourseContainer extends Component {
     render() { 
         return (
             <div style={{ marginTop: '-.02rem', transform: 'scale(1.3)', color: 'white' }}>
-                <Icon type='book' onClick={ this.showDrawer } ></Icon>
+                <Icon type='bell' onClick={ this.showDrawer } ></Icon>
                 <Drawer
-                    title="开始学习课程"
+                    title="消息通知"
                     placement="right"
                     closable={ true }
                     mask={ false }
@@ -33,18 +32,19 @@ class CourseContainer extends Component {
                     visible={ this.state.visible }
                     zIndex={ 90 }
                     style={{ marginTop: '.55rem' }}
-                    width={ 300 }
+                    width={ 480 }
                     >
-                    <Router>
-                        <LinkItem path='/' title='Choerodon平台基本设置' type='book'></LinkItem>
-                    </Router>
-                    <p className='text-info' style={{ fontSize: '.05rem' }}>通过教程了解Choerodon产品和服务</p>
-                    <p>了解如何管理组织、创建角色、分享平台校色和Root权限，系统自定义设置等平台层基本操作</p>
-                    <Divider />
+                    <div style={{ marginTop: '-.16rem' }}>
+                        <Router>
+                            <Link to='/'>查看所有消息</Link>
+                        </Router>
+                        <Button type='link'>全部清除</Button>
+                    </div>
+                    <Empty image={ Empty.PRESENTED_IMAGE_SIMPLE }  description='暂时没有站内消息' style={{ transform: 'scale(1.2)' }} />
                 </Drawer>
             </div>
         );
     }
 }
  
-export default CourseContainer;
+export default MessageContainer;
