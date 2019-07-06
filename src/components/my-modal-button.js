@@ -7,7 +7,13 @@ class MyModalButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: '选择项目'
+            btnText: '选择项目',
+            // 改变模态框按钮文字的处理逻辑
+            handleBtnTextChange: (newValue) => {
+                this.setState({
+                    btnText: newValue
+                })
+            }
         }
     }
     state = { visible: false };
@@ -36,7 +42,7 @@ class MyModalButton extends Component {
             <div style={{ marginTop: '-0.04rem' }}>
                 <Button type="link" block onClick={ this.showModal } className='modal-btn-header'>
                     <Icon type="project" theme="filled" />
-                    { this.state.value }
+                    { this.state.btnText }
                     <Icon type="caret-down" />
                 </Button>
                 <Modal
@@ -55,7 +61,7 @@ class MyModalButton extends Component {
                         </Button>,
                     ]}
                 >
-                    <ModelHomeContainer dropdownData={ this.props.dropdownData } tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></ModelHomeContainer>
+                    <ModelHomeContainer dropdownData={ this.props.dropdownData } tableData={ this.props.tableData } tableColumns={ this.props.tableColumns } handleBtnTextChange={ this.state.handleBtnTextChange }></ModelHomeContainer>
                 </Modal>
             </div>
         );

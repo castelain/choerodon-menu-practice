@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { Layout } from 'choerodon-ui';
 import MyHeader from '../containers/my-header';
 import HomeContainer from '../containers/home-container';
-
+import OrganizationContentContainer from "../containers/organization-content-container";
 
 const { Content } = Layout;
 
@@ -12,7 +12,7 @@ class Home extends Component {
         super(props);
         this.state = {
             // 导航栏上的按钮模态框的数据源
-            
+           
             // 组织的下拉菜单的数据
             dropdownData: {
                 data: [
@@ -31,21 +31,26 @@ class Home extends Component {
                 ],
                 // 模态框中下拉列表的点击事件监听器
                 onChangeKey: this.onChangeKey,
+                // value: '所有组织'
             },
             
             // 所有的表格数据
-            // TODO: 模态框中的表格数据链接的跳转
+            // FIXED: 模态框中的表格数据链接的跳转
             items: [
                 {
                     key: '1',
-                    name: <a href="#">2019研发中心实习组</a>,
+                    id: 68,
+                    name: <Link to={{ pathname: '/project/?id=68&name=2019研发中心实习组' }}>2019研发中心实习组</Link>,
+                    nameStr: '2019研发中心实习组',
                     id: 'trainning',
                     typeName: '敏捷项目',
                     type: 'project'
                 },
                 {
                     key: '2',
-                    name: <a href="#">注册的组织测试</a>,
+                    id: 50,
+                    name: <Link to = {{ pathname: '/organization/?id=50&name=注册的组织测试' }} >注册的组织测试</Link>,
+                    nameStr: '注册的组织测试',
                     id: 'org-qebh68zd9k',
                     typeName: '组织',
                     type: 'organization'
@@ -75,6 +80,7 @@ class Home extends Component {
     
     // 模态框中下拉列表的点击事件监听器
     onChangeKey = (key) => {
+        // 根据在下拉框中选择类别的不同，得到不同的表格数据以及设置下拉框显示的数据
         if(key === '1') {
             this.setState({
                 items: [
@@ -85,7 +91,7 @@ class Home extends Component {
                         typeName: '组织',
                         type: 'organization'
                     }
-                ]
+                ],
             });
         }else if(key === '2') {
             this.setState({
@@ -123,13 +129,14 @@ class Home extends Component {
     render() { 
         return ( 
             <Layout>
-                <MyHeader dropdownData={ this.state.dropdownData } tableData={ this.state.items } tableColumns={ this.state.columns }></MyHeader>
+                <MyHeader dropdownData={ this.state.dropdownData } tableData={ this.state.items } tableColumns={ this.state.columns } btnText={ this.state.btnText }></MyHeader>
                 <Content className='content-box'>
                     <Router>
                         <Switch>
-                            <Route path='/' exact>
-                                <HomeContainer></HomeContainer>
+                            <Route path='/' exact component={ HomeContainer }>
+                                {/* <HomeContainer></HomeContainer> */}
                             </Route>
+                            <Route path='/organization' component={ OrganizationContentContainer }></Route>
                         </Switch>
                     </Router>
                 </Content>

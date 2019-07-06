@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Layout, Row, Col } from 'choerodon-ui';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoStatic from '../components/logo-static';
-import LogoDynamic from '../components/logo-dynamic';
+import MenuIconContainer from '../containers/menu-icon-container';
 import MyModalButton from '../components/my-modal-button';
 import AvatarContainer from "../containers/avatar-container";
 import ShortcutContainer from '../containers/shortcut-container';
@@ -25,7 +25,7 @@ class MyHeader extends Component {
                         <Router>
                             <Switch>
                                 <Route path='/' component={ LogoStatic } exact></Route>
-                                <Route component={ LogoDynamic }></Route>
+                                <Route component={ MenuIconContainer }></Route>
                             </Switch>
                         </Router>
                     </Col>

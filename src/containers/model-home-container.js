@@ -21,7 +21,7 @@ class ModelHomeContainer extends Component {
                         <MySearchInput ></MySearchInput>
                     </Col>
                 </Row>
-                <MyTable tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></MyTable>
+                <MyTable tableData={ this.props.tableData } tableColumns={ this.props.tableColumns } handleBtnTextChange={ this.props.handleBtnTextChange }></MyTable>
             </div>
         );
     }
