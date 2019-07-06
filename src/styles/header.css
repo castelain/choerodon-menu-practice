@@ -4,4 +4,5 @@
     position: fixed;
     width: 100%;
     box-shadow: 0 .01rem .1rem rgba(0, 0, 0, .6);
+    z-index: 100;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card } from 'choerodon-ui';
+import MySteps from '../components/my-steps';
 
 class NoticeCard extends Component {
     constructor(props) {
@@ -8,10 +9,8 @@ class NoticeCard extends Component {
     }
     render() { 
         return (
-            <Card title="Card title" extra={<a href="#">More</a>} style={{ width: 300 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
+            <Card title={ this.props.dataSet.title } extra={<a href="#">{ this.props.dataSet.operation }</a>} style={{ width: 400 }}  className="card-box">
+                <MySteps stepsData={ this.props.dataSet.eventsData }></MySteps>
             </Card>
         );
     }

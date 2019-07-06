@@ -3,6 +3,7 @@ import { Layout } from 'choerodon-ui';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoStatic from '../components/logo-static';
 import LogoDynamic from '../components/logo-dynamic';
+import MyModalButton from '../components/my-modal-button';
 import '../styles/header.css';
 
 const { Header } = Layout;
@@ -20,7 +21,8 @@ class MyHeader extends Component {
                         <Route path='/' component={ LogoStatic } exact></Route>
                         <Route component={ LogoDynamic }></Route>
                     </Switch>
-                </Router>   
+                </Router>
+                <MyModalButton></MyModalButton>  
             </Header>  
         );
     }

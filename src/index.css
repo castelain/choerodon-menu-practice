@@ -34,8 +34,11 @@ code {
 
 /* card容器样式设置 */
 .card-box {
-   top: .7rem;
+   top: .4rem;
+   width: 25rem,;
+   height: 3.6rem;
+   box-shadow: 0 0 .05rem rgba(0, 0, 0, .1);
 }
 .card-box:hover {
-    box-shadow: 0 0 .4rem rgba(0, 0, 0, .1);
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .1);
 }
