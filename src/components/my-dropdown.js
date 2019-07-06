@@ -8,23 +8,23 @@ class MyDropdown extends Component {
     }
     render() {
         const onClick = ({ key }) => {
-            message.info(`Click on item ${key}`);
+            this.props.dropdownData.onChangeKey(key);
           };
           
         const menu = (
-            <Menu onClick={onClick}>
+            <Menu onClick={ onClick }>
                 {
-                    this.props.dropdownData.map((item) => 
+                    this.props.dropdownData.data.map((item) => 
                         <Menu.Item key={ item.key }>{ item.name }</Menu.Item>
                     )
                 }
             </Menu>
           );
         return (
-            <Dropdown overlay={menu}>
-                <a className="ant-dropdown-link" href="#">
+            <Dropdown overlay={ menu }>
+                <div style={{ borderBottom: '.0125rem solid rgba(0, 0, 0, .1 )', width: '100%', paddingBottom: '.065rem', color: 'rgba(0, 0, 0, .6)' }}>
                     所有组织 <Icon type="down" />
-                </a>
+                </div>
             </Dropdown>
         );
     }

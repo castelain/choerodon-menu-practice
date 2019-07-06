@@ -26,7 +26,7 @@ class MyHeader extends Component {
                         </Router>
                     </Col>
                     <Col span={ 4 }>
-                        <MyModalButton dataSource={ this.props.dataSource }></MyModalButton> 
+                        <MyModalButton dropdownData={ this.props.dropdownData } tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></MyModalButton> 
                     </Col>
                 </Row> 
             </Header>  

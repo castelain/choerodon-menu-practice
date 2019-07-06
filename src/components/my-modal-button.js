@@ -55,7 +55,7 @@ class MyModalButton extends Component {
                         </Button>,
                     ]}
                 >
-                    <ModelHomeContainer dataSource={ this.props.dataSource }></ModelHomeContainer>
+                    <ModelHomeContainer dropdownData={ this.props.dropdownData } tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></ModelHomeContainer>
                 </Modal>
             </div>
         );

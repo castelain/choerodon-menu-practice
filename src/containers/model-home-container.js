@@ -13,15 +13,15 @@ class ModelHomeContainer extends Component {
     render() { 
         return (
             <div>
-                <Row gutter={ 16 }>
+                <Row gutter={ 16 } style={{ marginBottom: '.2rem' }}>
                     <Col span={ 12 }>
-                        <MyDropdown dropdownData={ this.props.dataSource.dropdownData }></MyDropdown>
+                        <MyDropdown dropdownData={ this.props.dropdownData } style={{ borderBottom: '.02rem solid rgba(0, 0, 0, .1)'  }}></MyDropdown>
                     </Col>
                     <Col span={ 12 }>
                         <MySearchInput ></MySearchInput>
                     </Col>
                 </Row>
-                <MyTable dataSource={ this.props.dataSource }></MyTable>
+                <MyTable tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></MyTable>
             </div>
         );
     }
