@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout } from 'choerodon-ui';
+import { Layout, Row, Col } from 'choerodon-ui';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoStatic from '../components/logo-static';
 import LogoDynamic from '../components/logo-dynamic';
@@ -16,13 +16,19 @@ class MyHeader extends Component {
     render() { 
         return (
             <Header id="header-box">
-                <Router>
-                    <Switch>
-                        <Route path='/' component={ LogoStatic } exact></Route>
-                        <Route component={ LogoDynamic }></Route>
-                    </Switch>
-                </Router>
-                <MyModalButton></MyModalButton>  
+                <Row gutter={ 16 }>
+                    <Col span={ 4 }>
+                        <Router>
+                            <Switch>
+                                <Route path='/' component={ LogoStatic } exact></Route>
+                                <Route component={ LogoDynamic }></Route>
+                            </Switch>
+                        </Router>
+                    </Col>
+                    <Col span={ 4 }>
+                        <MyModalButton dataSource={ this.props.dataSource }></MyModalButton> 
+                    </Col>
+                </Row> 
             </Header>  
         );
     }

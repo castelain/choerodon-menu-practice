@@ -1,3 +1,13 @@
+/* .logo-bg-block {
+    backgroundColor: rgb(48, 63, 159);
+    height: 0.55rem;
+    width: 140%;
+    margin-left: -100px;
+    margin-top: -10px;
+    display: inline-block;
+    float: left;
+} */
+
 .logo {
     color: white;
     transform: scale(1.5);

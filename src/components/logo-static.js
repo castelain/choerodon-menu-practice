@@ -10,9 +10,11 @@ class LogoStatic extends Component {
     render() { 
         return (
             <div>
-                <Icon type="local_cafe" className="logo" />
-                <h2 className='logo-text'>Choerodon</h2>
-            </div>
+                <div>
+                    <Icon type="local_cafe" className="logo" />
+                    <h2 className="logo-text">Choerodon</h2>
+                </div>
+            </div>  
         );
     }
 }
