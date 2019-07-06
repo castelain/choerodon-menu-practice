@@ -4,6 +4,9 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import LogoStatic from '../components/logo-static';
 import LogoDynamic from '../components/logo-dynamic';
 import MyModalButton from '../components/my-modal-button';
+import AvatarContainer from "../containers/avatar-container";
+import ShortcutContainer from '../containers/shortcut-container';
+import CourseContainer from "../containers/course-container";
 import '../styles/header.css';
 
 const { Header } = Layout;
@@ -27,6 +30,25 @@ class MyHeader extends Component {
                     </Col>
                     <Col span={ 4 }>
                         <MyModalButton dropdownData={ this.props.dropdownData } tableData={ this.props.tableData } tableColumns={ this.props.tableColumns }></MyModalButton> 
+                    </Col>
+                    <Col span={ 12 }>
+                        &nbsp; 
+                    </Col>
+                    <Col span={ 4 }>
+                        <Row gutter={ 8 }>
+                            <Col span={ 6 }>
+                                <ShortcutContainer></ShortcutContainer>
+                            </Col>
+                            <Col span={ 6 }>
+                                <CourseContainer></CourseContainer>
+                            </Col>
+                            <Col span={ 6 }>
+                            
+                            </Col>
+                            <Col span={ 6 }>
+                                <AvatarContainer></AvatarContainer>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row> 
             </Header>  

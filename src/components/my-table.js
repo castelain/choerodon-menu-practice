@@ -8,7 +8,8 @@ class MyTable extends Component {
     }
     render() { 
         return (
-            <Table dataSource={ this.props.tableData  } columns={ this.props.tableColumns } />
+            <Table dataSource={ this.props.tableData }  columns={ this.props.tableColumns } 
+            />
         );
     }
 }

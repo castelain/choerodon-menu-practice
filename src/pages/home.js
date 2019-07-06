@@ -34,17 +34,18 @@ class Home extends Component {
             },
             
             // 所有的表格数据
+            // TODO: 模态框中的表格数据链接的跳转
             items: [
                 {
                     key: '1',
-                    name: '2019研发中心实习组',
+                    name: <a href="#">2019研发中心实习组</a>,
                     id: 'trainning',
                     typeName: '敏捷项目',
                     type: 'project'
                 },
                 {
                     key: '2',
-                    name: '注册的组织测试',
+                    name: <a href="#">注册的组织测试</a>,
                     id: 'org-qebh68zd9k',
                     typeName: '组织',
                     type: 'organization'
