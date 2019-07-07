@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card } from 'choerodon-ui';
 import MySteps from '../components/my-steps';
+import MyCard from '../components/my-card';
 
 class NoticeCard extends Component {
     constructor(props) {

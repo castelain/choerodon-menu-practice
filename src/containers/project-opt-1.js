@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'choerodon-ui';
 import SubHeader from '../components/sub-header';
-import ProfileCard from '../components/profile-card';
-import NoticeCard from '../components/notice-card';
+import ProfileCard from './profile-card';
+import NoticeCard from './notice-card';
 
 class ProjectOpt1 extends Component {
     constructor(props) {

@@ -42,7 +42,7 @@ class Home extends Component {
                     id: 68,
                     name: <Link to={{ pathname: '/project/?id=68&name=2019研发中心实习组' }}>2019研发中心实习组</Link>,
                     nameStr: '2019研发中心实习组',
-                    id: 'trainning',
+                    idStr: 'trainning',
                     typeName: '敏捷项目',
                     type: 'project'
                 },
@@ -51,7 +51,7 @@ class Home extends Component {
                     id: 50,
                     name: <Link to = {{ pathname: '/organization/?id=50&name=注册的组织测试' }} >注册的组织测试</Link>,
                     nameStr: '注册的组织测试',
-                    id: 'org-qebh68zd9k',
+                    idStr: 'org-qebh68zd9k',
                     typeName: '组织',
                     type: 'organization'
                 },
@@ -86,8 +86,10 @@ class Home extends Component {
                 items: [
                     {
                         key: '2',
-                        name: '注册的组织测试',
-                        id: 'org-qebh68zd9k',
+                        id: 50,
+                        name: <Link to = {{ pathname: '/organization/?id=50&name=注册的组织测试' }} >注册的组织测试</Link>,
+                        nameStr: '注册的组织测试',
+                        idStr: 'org-qebh68zd9k',
                         typeName: '组织',
                         type: 'organization'
                     }
@@ -98,8 +100,10 @@ class Home extends Component {
                 items: [
                     {
                         key: '1',
-                        name: '2019研发中心实习组',
-                        id: 'trainning',
+                        id: 68,
+                        name: <Link to={{ pathname: '/project/?id=68&name=2019研发中心实习组' }}>2019研发中心实习组</Link>,
+                        nameStr: '2019研发中心实习组',
+                        idStr: 'trainning',
                         typeName: '敏捷项目',
                         type: 'project'
                     }
@@ -110,15 +114,19 @@ class Home extends Component {
                 items: [
                     {
                         key: '1',
-                        name: '2019研发中心实习组',
-                        id: 'trainning',
+                        id: 68,
+                        name: <Link to={{ pathname: '/project/?id=68&name=2019研发中心实习组' }}>2019研发中心实习组</Link>,
+                        nameStr: '2019研发中心实习组',
+                        idStr: 'trainning',
                         typeName: '敏捷项目',
                         type: 'project'
                     },
                     {
                         key: '2',
-                        name: '注册的组织测试',
-                        id: 'org-qebh68zd9k',
+                        id: 50,
+                        name: <Link to = {{ pathname: '/organization/?id=50&name=注册的组织测试' }} >注册的组织测试</Link>,
+                        nameStr: '注册的组织测试',
+                        idStr: 'org-qebh68zd9k',
                         typeName: '组织',
                         type: 'organization'
                     },
