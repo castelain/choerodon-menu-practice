@@ -25,6 +25,7 @@ class MyHeader extends Component {
                         <Router>
                             <Switch>
                                 <Route path='/' component={ LogoStatic } exact></Route>
+                                <Route path='/user-settings' component={ LogoStatic }></Route>
                                 <Route component={ MenuIconContainer }></Route>
                             </Switch>
                         </Router>

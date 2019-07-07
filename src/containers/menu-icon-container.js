@@ -41,7 +41,6 @@ class MenuIconContainer extends Component {
                     <Switch>
                         <Route path='/project' component={ ProjectSettingsContainer }></Route>
                         <Route path='/organization' component={ OrganizationSettingsContainer }></Route>
-                        <Route></Route>
                     </Switch>
                 </Router>
                 </Drawer>
