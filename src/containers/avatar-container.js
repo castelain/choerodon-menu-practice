@@ -12,7 +12,7 @@ const userSettings = [
     },
     {
         type: 'key',
-        path: '/',
+        path: '/user-settings/password',
         title: '修改密码'
     },
     {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon, Popover, Button } from 'antd';
 import ShortcutModal from '../components/shortcut-modal';
+import "../styles/header.css";
 
 const content = (
     <div>
@@ -16,9 +17,9 @@ class ShortcutContainer extends Component {
     }
     render() { 
         return (
-            <div style={{ marginTop: '-.02rem', transform: 'scale(1.4)' }}>
+            <div style={{ marginTop: '-.02rem', transform: 'scale(1.3)' }}>
                 <Popover content={content} title="快捷方式" trigger="click">
-                    <Button type='link' style={{ color: 'white' }}>
+                    <Button type='circle' style={{ color: 'white', backgroundColor: 'transparent', border: '0' }}>
                         <Icon type="appstore" />
                     </Button>
                 </Popover>

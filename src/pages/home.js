@@ -5,6 +5,7 @@ import MyHeader from '../containers/my-header';
 import HomeContainer from '../containers/home-container';
 import OrganizationContentContainer from "../containers/organization-content-container";
 import ProjectContentContainer from "../containers/project-content-container";
+import UserSettingsContainer from '../containers/user-settings-container';
 
 const { Content } = Layout;
 
@@ -142,9 +143,8 @@ class Home extends Component {
                 <Content className='content-box'>
                     <Router>
                         <Switch>
-                            <Route path='/' exact component={ HomeContainer }>
-                                {/* <HomeContainer></HomeContainer> */}
-                            </Route>
+                            <Route path='/' exact component={ HomeContainer }></Route>
+                            <Route path='/user-settings' component={ UserSettingsContainer }></Route>
                             <Route path='/organization' component={ OrganizationContentContainer }></Route>
                             <Route path='/project' component={ ProjectContentContainer }></Route>
                         </Switch>

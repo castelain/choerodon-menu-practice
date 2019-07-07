@@ -12,7 +12,7 @@ class CourseContainer extends Component {
     }
     showDrawer = () => {
         this.setState({
-          visible: true,
+          visible: !this.state.visible
         });
     }
     onClose = () => {

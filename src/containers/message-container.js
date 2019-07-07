@@ -11,7 +11,7 @@ class MessageContainer extends Component {
     }
     showDrawer = () => {
         this.setState({
-          visible: true,
+          visible: !this.state.visible,
         });
     }
     onClose = () => {
@@ -21,7 +21,7 @@ class MessageContainer extends Component {
     }
     render() { 
         return (
-            <div style={{ marginTop: '-.02rem', transform: 'scale(1.3)', color: 'white' }}>
+            <div style={{ marginTop: '-.02rem', transform: 'scale(1.4)', color: 'white' }}>
                 <Icon type='bell' onClick={ this.showDrawer } ></Icon>
                 <Drawer
                     title="消息通知"
