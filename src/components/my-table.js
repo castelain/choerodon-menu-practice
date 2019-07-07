@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import { Table } from 'antd';
+import { getSearchKey } from "../utils/route-tools";
 
  // 绑定click事件监听器的环境
 // const handleRow = (record, rowId) => {
@@ -20,8 +21,15 @@ class MyTable extends Component {
     // click事件监听器的处理逻辑在这
     handleClick = (record, rowId) => {
         // alert("record: ", record.name, rowId);
-        this.props.handleBtnTextChange(record.nameStr);
-        // this.props.handleBtnTextChange(this.props.location.search.name);
+        // this.props.handleBtnTextChange(record.nameStr);
+        // handleRoute = () => {
+        //     let searchName = getSearchKey('name');
+        //     this.setState({
+        //         btnText: searchName
+        //     });
+        // }
+        let searchName = getSearchKey('name');
+        this.props.handleBtnTextChange(searchName);
     }
 
     render() { 

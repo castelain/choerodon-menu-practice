@@ -14,6 +14,10 @@ class LinkItem extends Component {
                     <Icon type={ this.props.type } style={{ marginRight: '.06rem' }} />
                     { this.props.title }
                 </Link>
+                {/* <div>
+                    <Icon type={ this.props.type } style={{ marginRight: '.06rem' }} />
+                    { this.props.title }
+                </div> */}
             </div>
         );
     }
