@@ -7,8 +7,8 @@ class ProjectOpt2 extends Component {
         this.state = {
              // 主页次级导航的信息
              part: {
-                type: 'account_balance',
-                title: '首页'
+                type: 'home',
+                title: '应用管理'
             }
         }
     }
@@ -16,7 +16,7 @@ class ProjectOpt2 extends Component {
         return (
             <div>
                 <SubHeader part={ this.state.part }></SubHeader>
-                <h1 style={{ textAlign: 'center', marginTop: '1rem' }}>项目管理</h1>
+                <h1 style={{ textAlign: 'center', marginTop: '1rem' }}>应用管理</h1>
             </div>
         );
     }

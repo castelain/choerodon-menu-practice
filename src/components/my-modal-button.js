@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Modal, Button, Icon } from 'antd';
-import ModelHomeContainer from '../containers/model-home-container'
-import '../styles/button.css'
+import ModelHomeContainer from '../containers/model-home-container';
+import { getSearchKey } from "../utils/route-tools";
+import '../styles/button.css';
 
 class MyModalButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            btnText: '选择项目',
+            btnText: getSearchKey('name') || '选择项目',
             // 改变模态框按钮文字的处理逻辑
             handleBtnTextChange: (newValue) => {
                 this.setState({

@@ -29,8 +29,8 @@ class OrganizationOpt1 extends Component {
         this.state = {
              // 主页次级导航的信息
              part: {
-                type: 'account_balance',
-                title: '首页'
+                type: 'home',
+                title: '组织设置'
             },
 
             // 主页个人信息卡片的实体信息

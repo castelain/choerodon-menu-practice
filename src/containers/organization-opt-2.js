@@ -7,8 +7,8 @@ class OrganizationOpt1 extends Component {
         this.state = {
              // 主页次级导航的信息
              part: {
-                type: 'account_balance',
-                title: '首页'
+                type: 'home',
+                title: '问题设置'
             }
         }
     }

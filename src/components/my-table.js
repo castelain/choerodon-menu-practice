@@ -22,12 +22,6 @@ class MyTable extends Component {
     handleClick = (record, rowId) => {
         // alert("record: ", record.name, rowId);
         // this.props.handleBtnTextChange(record.nameStr);
-        // handleRoute = () => {
-        //     let searchName = getSearchKey('name');
-        //     this.setState({
-        //         btnText: searchName
-        //     });
-        // }
         let searchName = getSearchKey('name');
         this.props.handleBtnTextChange(searchName);
     }
