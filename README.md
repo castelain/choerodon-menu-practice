@@ -1,68 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 路由
+- 平台层：http://localhost:3000/#/
+- 用户修改密码：http://localhost:3000/#/user-settings/password
+---
 
-## Available Scripts
+- 组织层：http://localhost:3000/#/organization/?id=50&name=%E6%B3%A8%E5%86%8C%E7%9A%84%E7%BB%84%E7%BB%87%E6%B5%8B%E8%AF%95
+- 组织层子菜单第一个选项：http://localhost:3000/#/organization/opt-1?id=50&name=%E6%B3%A8%E5%86%8C%E7%9A%84%E7%BB%84%E7%BB%87%E6%B5%8B%E8%AF%95
+- 组织层子菜单第二个选项：http://localhost:3000/#/organization/opt-2?id=50&name=%E6%B3%A8%E5%86%8C%E7%9A%84%E7%BB%84%E7%BB%87%E6%B5%8B%E8%AF%95
+---
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 项目层：http://localhost:3000/#/project/?id=68&name=2019%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83%E5%AE%9E%E4%B9%A0%E7%BB%84
+- 项目层子菜单第一个选项：http://localhost:3000/#/project/opt-1?id=68&name=2019%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83%E5%AE%9E%E4%B9%A0%E7%94%9F%E7%BB%84
+- 项目层子菜单第二个选项：http://localhost:3000/#/project/opt-2?id=68&name=2019%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83%E5%AE%9E%E4%B9%A0%E7%94%9F%E7%BB%84
