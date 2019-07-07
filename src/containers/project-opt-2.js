@@ -16,7 +16,7 @@ class ProjectOpt2 extends Component {
         return (
             <div>
                 <SubHeader part={ this.state.part }></SubHeader>
-                <h1 style={{ textAlign: 'center', marginTop: '1rem' }}>问题设置</h1>
+                <h1 style={{ textAlign: 'center', marginTop: '1rem' }}>项目管理</h1>
             </div>
         );
     }

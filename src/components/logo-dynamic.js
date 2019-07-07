@@ -10,7 +10,7 @@ class LogoDynamic extends Component {
     render() { 
         return ( 
             <div>
-                <Icon type="menu"  className="logo" />
+                <Icon type="menu"  className="logo" style={{ marginLeft: '-.15rem' }} />
                 <h2 className='logo-text'>Choerodon</h2>
             </div>
          );

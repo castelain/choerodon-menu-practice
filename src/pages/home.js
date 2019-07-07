@@ -4,6 +4,7 @@ import { Layout } from 'choerodon-ui';
 import MyHeader from '../containers/my-header';
 import HomeContainer from '../containers/home-container';
 import OrganizationContentContainer from "../containers/organization-content-container";
+import ProjectContentContainer from "../containers/project-content-container";
 
 const { Content } = Layout;
 
@@ -145,6 +146,7 @@ class Home extends Component {
                                 {/* <HomeContainer></HomeContainer> */}
                             </Route>
                             <Route path='/organization' component={ OrganizationContentContainer }></Route>
+                            <Route path='/project' component={ ProjectContentContainer }></Route>
                         </Switch>
                     </Router>
                 </Content>
