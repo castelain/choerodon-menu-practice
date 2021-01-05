@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.20.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "choerodon-ui": "^0.7.5",
     "mobx": "^5.11.0",
     "mobx-react": "^6.1.1",
